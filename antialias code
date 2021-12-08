@@ -1,0 +1,5 @@
+img2 = Image.open('error.jpg')
+wpercent = (28/float(img2.size[0]))
+hsize = int((float(img2.size[1])*float(wpercent)))
+img3 = img2.resize((28,28),PIL.Image.ANTIALIAS)
+img3.save('error3.jpg',img2.format)
